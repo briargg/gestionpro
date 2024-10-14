@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stiles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Proyectos de Desarrollo</h1>
+    </header>
+    <div class="container">
+        <div class="project-card" data-details="Detalles sobre el Proyecto A">
+            <h2>Proyecto A</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <p>Estado: En Progreso</p>
+            <p>Responsable: Juan Pérez</p>
+            <button class="button">Ver Detalles</button>
+        </div>
+
+        <div class="project-card" data-details="Detalles sobre el Proyecto B">
+            <h2>Proyecto B</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%;"></div>
+            </div>
+            <p>Estado: Pendiente</p>
+            <p>Responsable: María López</p>
+            <button class="button">Ver Detalles</button>
+        </div>
+
+        <div class="project-card" data-details="Detalles sobre el Proyecto C">
+            <h2>Proyecto C</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+            <p>Estado: Completado</p>
+            <p>Responsable: Carlos García</p>
+            <button class="button">Ver Detalles</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Detalles del Proyecto</h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

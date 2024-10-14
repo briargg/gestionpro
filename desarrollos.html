@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado del Desarrollo de Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estado del Desarrollo de Software</h1>
+    </header>
+    <div class="container">
+        <div class="stage-card">
+            <h2>Fase 1: Análisis de Requerimientos</h2>
+            <div class="status pending">
+                <span>Estado: Pendiente</span>
+            </div>
+            <textarea placeholder="Comentario sobre esta fase..."></textarea>
+            <button class="confirm-button">Confirmar Conformidad</button>
+        </div>
+
+        <div class="stage-card">
+            <h2>Fase 2: Diseño de la Solución</h2>
+            <div class="status approved">
+                <span>Estado: Aprobado</span>
+            </div>
+            <textarea placeholder="Comentario sobre esta fase..."></textarea>
+            <button class="confirm-button">Confirmar Conformidad</button>
+        </div>
+
+        <div class="stage-card">
+            <h2>Fase 3: Desarrollo</h2>
+            <div class="status in-progress">
+                <span>Estado: En Progreso</span>
+            </div>
+            <textarea placeholder="Comentario sobre esta fase..."></textarea>
+            <button class="confirm-button">Confirmar Conformidad</button>
+        </div>
+
+        <div class="stage-card">
+            <h2>Fase 4: Pruebas</h2>
+            <div class="status not-approved">
+                <span>Estado: No Aprobado</span>
+            </div>
+            <textarea placeholder="Comentario sobre esta fase..."></textarea>
+            <button class="confirm-button">Confirmar Conformidad</button>
+        </div>
+
+        <div class="stage-card">
+            <h2>Fase 5: Implementación</h2>
+            <div class="status completed">
+                <span>Estado: Completado</span>
+            </div>
+            <textarea placeholder="Comentario sobre esta fase..."></textarea>
+            <button class="confirm-button">Confirmar Conformidad</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Conformidad Confirmada</h2>
+            <p id="modal-text">Gracias por tu conformidad.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
